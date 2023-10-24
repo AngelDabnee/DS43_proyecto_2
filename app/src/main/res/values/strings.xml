@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">dados</string>
+    <string name="title">Dices</string>
+    <string name="noDices">Select a number</string>
+    <string name="noFaces">Select a face</string>
+    <string name="btnRoll">Roll</string>
+    <string name="txtResult">Result:</string>
+    <string name="result">XX</string>
+    <string name="btnRollAgain">RollAgain</string>
+
+
+
+
+
+
+</resources>
