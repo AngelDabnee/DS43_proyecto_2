@@ -7,6 +7,10 @@
     <string name="txtResult">Result:</string>
     <string name="result">XX</string>
     <string name="btnRollAgain">RollAgain</string>
+    <string name="selectDead">Select No.Dead</string>
+    <string name="selectFace">Select No. Faces</string>
+
+
 
 
 

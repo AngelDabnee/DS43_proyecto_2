@@ -28,16 +28,28 @@ class MainActivity : AppCompatActivity() {
         btndead.setOnClickListener {
             //sacamos el numero que escribe
             var numFaceText = numFace.text.toString()
-
-            if(numFaceText.isNotEmpty()){
+            var numDeadText = numDead.text.toString()
+            //creamos la condición para decir que necesitamos los campos llenos (validmaos)
+            if(numFaceText.isNotEmpty() && numDeadText.isNotEmpty()){
+                //guardamos cada valor del texto del texto que tomamos del usuario en una variable castiamos cada valor a su parte int para poder hacer las operaciones
                 var numFaceInt = numFaceText.toInt()
+                var numDeadInt = numDeadText.toInt()
+                //ahora utilizamos la función que creamos en el modelo dead.kt pasandole el valor de numero de caras el cual nos devolverá un random
                 var deadRoll = Dead(numFaceInt)
-                var endFaces = deadRoll.roll()
-                result.text = endFaces.toString()
+                var resultado = mutableListOf<String>()
+                var totalEndFaces: Int = 0 //variable para acumular
+                //creamos un recorrimiento para que cada valor que le pongamos en numero de dados, se multiplique por el número de caras.
+                for(i in 1..numDeadInt){
+                    val endFaces = deadRoll.roll()
+                    val txtdead = "Dead Num:"
+                    resultado.add(txtdead+(endFaces) +"\n")
+                    totalEndFaces += endFaces
+                }
+
+                result.text = resultado.toString() + "\n" + "Total Face: " + totalEndFaces.toString()
             }else{
                 result.text = "No pusiste numero"
             }
-
         }
     }
 }
