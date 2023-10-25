@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">dados</string>
+    <string name="title">Dados</string>
+    <string name="noDices">Selecciona Cantidad de Dados</string>
+    <string name="noFaces">Selecciona Cantidad de Caras</string>
+    <string name="btnRoll">Tirar</string>
+    <string name="txtResult">Resultado:</string>
+    <string name="result">XX</string>
+    <string name="btnRollAgain">Tirar De Nuevo</string>
+    <string name="selectDead">Selecciona la Cantidad de Dados</string>
+    <string name="selectFace">Selecciona la Cantidad de Caras</string>
+</resources>
